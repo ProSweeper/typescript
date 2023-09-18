@@ -4,14 +4,24 @@
   "description": "project for learning",
   "main": "index.js",
   "scripts": {
-	 "start:build": "npx tsc -w",
-	 "start:run": "nodemon build index.js",
-	 "start": "concurrently npm:start:*"
+    "start:build": "npx tsc -w",
+    "start:run": "nodemon build index.js",
+    "start": "concurrently npm:start:*",
+	"start:sort": "concurrently npx tsc -w | nodemon build sort/src/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^8.2.1",
     "nodemon": "^3.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProSweeper/typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ProSweeper/typescript/issues"
+  },
+  "homepage": "https://github.com/ProSweeper/typescript#readme"
 }
