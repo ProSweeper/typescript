@@ -1,5 +1,3 @@
-import { NumberCollection } from "./NumbersCollection";
-
 export interface ISortable {
 	length: number;
 	compare(leftIdx: number, rightIdx: number): boolean;
