@@ -1,5 +1,5 @@
 import { ISortable } from "./Sorter";
-
+import { Sorter } from "./Sorter";
 interface INode {
   value: number;
   next: Node | null;
@@ -9,7 +9,7 @@ class Node implements INode {
   constructor(public value: number) {}
 }
 
-export class LinkedList implements ISortable {
+export class LinkedList extends Sorter{
   head: Node | null = null;
 
   add(data: number): void {
